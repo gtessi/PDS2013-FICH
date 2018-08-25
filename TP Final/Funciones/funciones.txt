@@ -1,0 +1,55 @@
+FUNCIONES
+
+[media,desvio]=mediaDesvio(x)
+
+Dado un conjunto de valores x, calcula su media y desvio.
+
+
+prob=calcularProbabilidad(x,media,desvio)
+
+Dado un valor x, una media y un desvio, calcula su probabilidad.
+
+
+[pos,duraExplo,entreExplo]=explosiones(s,fm)
+
+Dada una señal y su frecuencia de muestreo, calcula las posiciones de inicio y fin de cada explosion, la duracion de cada una y el tiempo entre explosiones (si es que lo haya).
+
+
+frecuencias = frecuencias(s,fm,pos,cant_f)
+
+Dada una señal, su frecuencia de muestreo, las posiciones de las explosiones y la cantidad de frecuencias a considerar, devuelve la matriz con las frecuencias sin promediar.
+
+
+msf = msf(s,fm)
+
+Dada una señal y su frecuencia de muestreo, calcula la frecuencia espectral media.
+
+
+promedio = cajaYbigote(valores)
+
+Dado un conjunto de valores, le aplica el metodo de caja y bigote para tomar solo los elementos que tengan mayor relacion entre si y promediarlos.
+
+
+indices = generarIndices(canto,fm)
+
+Dado el canto del ave y su frecuencia de muestreo, genera su vector de indices.
+
+
+[i1,i2,i3,i4,i5,i6] = generarIndicesV(canto,fm)
+
+Dado el canto del ave y su frecuencia de muestreo, genera vectores de indices sin promediar los valores calculados.
+
+
+indices_prom = generarIndicesEspecie(archivos)
+
+Dada una lista de archivos de una especie como vector columna, genera la media y el desvio de cada indice.
+
+
+masProbable(matrizP)
+
+Dada la matriz de porcentajes de indices, calcula la especie mas probable y devuelve el nombre de la misma con su probabilidad.
+
+
+comprobarEspecie(archivo)
+
+Dado un archivo que contenga la señal a identificar, calcula sus indices y calcula la probabilidad de cada especie, y muestra en pantalla el nombre de la especie identificada y su probabilidad.

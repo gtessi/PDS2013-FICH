@@ -1,0 +1,8 @@
+INDICES
+
+1 = duracion de explosion promedio
+2 = tiempo entre explosiones promedio
+3 = cantidad de explosiones
+4 = frecuencia maxima 1
+5 = frecuencia maxima 2
+6 = espectro de frecuencia media
